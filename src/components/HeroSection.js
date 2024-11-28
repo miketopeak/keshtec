@@ -29,28 +29,25 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative h-screen bg-cover bg-center flex" style={{ backgroundImage: `url(${banner})` }}>
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="relative z-10 flex-1 flex flex-col justify-center items-start text-white p-10">
-        <h1 className="text-4xl font-bold mb-4">{slides[currentSlide].heading}</h1>
-        <p className="text-lg">{slides[currentSlide].subheading}</p>
-      </div>
-      <div className="relative z-10 w-1/2 flex items-center justify-end p-10">
-        {slides.map((slide, index) => (
-          <div
-            key={slide.id}
-            className={`absolute transition-opacity duration-1000 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <img
-              src={slide.image}
-              alt={slide.heading}
-              className="max-h-[80vh] w-auto object-contain"
-            />
+    <div className="relative h-screen">
+      {slides.map((slide, index) => (
+        <div
+          key={slide.id}
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            index === currentSlide ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <img
+            src={slide.image}
+            alt={slide.heading}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center">
+            <h1 className="text-4xl font-bold mb-4">{slide.heading}</h1>
+            <p className="text-lg">{slide.subheading}</p>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };
