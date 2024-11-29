@@ -64,14 +64,14 @@ const Navbar = () => {
                     </button>
                     {dropdownOpen && (
                       <div
-                        className="absolute top-10 left-0 bg-white text-gray-700 shadow-md rounded-md z-10"
+                        className="absolute top-10 left-0 bg-white text-gray-500 shadow-md z-10 w-[230px] border-4 border-[#45a401]"
                         onMouseLeave={() => setDropdownOpen(false)}
                       >
                         {dropdownLinks.map((dropdownLink) => (
                           <a
                             key={dropdownLink.name}
                             href={dropdownLink.href}
-                            className="block px-4 py-2 text-[16px] font-semibold leading-[30px] hover:bg-gray-100"
+                            className="block px-4 py-2 text-[16px] leading-[30px] hover:bg-[#45a401] hover:text-white"
                             onClick={() => {
                               setActiveLink("services");
                               setDropdownOpen(false);
