@@ -1,14 +1,23 @@
 import React, { useState, useEffect } from "react";
-import banner from '../images/banner.png'
-import banner1 from '../images/banner1.jpg'
-import banner2 from '../images/banner2.jpg'
+import banner from "../images/banner.png";
+import banner1 from "../images/banner1.jpg";
+import banner2 from "../images/banner2.jpg";
 
 const slides = [
   {
     id: 1,
     image: banner1,
-    heading: "Innovative Solutions",
-    subheading: "Delivering tailored IT services for your business.",
+    heading: (
+      <>
+        Innovative technology engages the world,
+        <br /> empowering you to grow your{" "}
+        <span className="text-[#45a401] slider-custom-font italic">
+          business
+        </span>
+      </>
+    ),
+    subheading:
+      "We are focused on giving excellent software services. We are searching for skilled, talented, and devoted people to join us.",
   },
   {
     id: 2,
