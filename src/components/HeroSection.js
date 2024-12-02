@@ -22,8 +22,17 @@ const slides = [
   {
     id: 2,
     image: banner2,
-    heading: "Expert IT Staffing",
-    subheading: "Providing the best talent to meet your needs.",
+    heading: (
+      <>
+        Our finance can give more
+        <br /> possiblities of{" "}
+        <span className="text-[#45a401] slider-custom-font italic">
+          business
+        </span>
+      </>
+    ),
+    subheading:
+      "The argument in favor of using filler text goes something like this: If you use real content in the design process, anytime you reach ",
   },
 ];
 
