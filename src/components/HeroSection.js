@@ -61,7 +61,7 @@ const HeroSection = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center">
-            <h1 className="text-4xl font-bold mb-4">{slide.heading}</h1>
+          <h1 className="text-[44px] font-bold mb-4">{slide.heading}</h1>
             <p className="text-lg">{slide.subheading}</p>
           </div>
         </div>
