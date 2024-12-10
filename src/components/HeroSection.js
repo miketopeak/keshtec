@@ -46,6 +46,14 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   return (
     <div className="relative h-screen">
       {slides.map((slide, index) => (
@@ -72,6 +80,18 @@ const HeroSection = () => {
           </div>
         </div>
       ))}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full"
+      >
+        &#8592; {/* Left arrow */}
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full"
+      >
+        &#8594; {/* Right arrow */}
+      </button>
     </div>
   );
 };
