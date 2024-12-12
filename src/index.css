@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,8 +14,13 @@ code {
     monospace;
 }
 
+.auto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .slider-custom-font {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .btn-style-one {
@@ -30,7 +35,7 @@ code {
   border-radius: 50px;
   border: 2px solid #45a4019e;
   text-transform: capitalize;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
 .theme-btn {
@@ -56,6 +61,12 @@ code {
 }
 
 .btn-style-one:hover {
-  background: transparent; 
-  color: #45a4019e; 
+  background: transparent;
+  color: #45a4019e;
+}
+
+.service-box {
+  text-align: center;
+  padding: 0 50px 60px;
+  background: linear-gradient(to right, #eaeaed 0%, #ffffff 100%);
 }
