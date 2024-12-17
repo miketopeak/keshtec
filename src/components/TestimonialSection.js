@@ -45,16 +45,25 @@ const TestimonialSection = () => {
   };
 
   return (
-    <div className="testimonial-container mt-[95px]">
-      <div className="testimonial-content">
-        <div className="quote-mark">“</div>
-        <p>{testimonials[currentIndex].text}</p>
+    <div className="flex flex-col justify-center items-center bg-black text-white text-center py-10 px-5 mt-[95px]">
+      <div className="relative mb-5">
+        <div className="text-6xl font-bold text-white">“</div>
+        <p className="text-lg mt-2 mx-5 max-w-4xl">
+          {testimonials[currentIndex].text}
+        </p>
       </div>
-      <div className="testimonial-navigation">
-        <button className="arrow-left" onClick={handlePrev}>
+
+      <div className="flex gap-5">
+        <button
+          className="text-white text-2xl transition-colors duration-300 hover:text-gray-400"
+          onClick={handlePrev}
+        >
           ←
         </button>
-        <button className="arrow-right" onClick={handleNext}>
+        <button
+          className="text-white text-2xl transition-colors duration-300 hover:text-gray-400"
+          onClick={handleNext}
+        >
           →
         </button>
       </div>

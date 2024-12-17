@@ -1,4 +1,4 @@
-const ServiceSection = () => {
+const ServiceGoalSection = () => {
   return (
     <div className="auto-container">
       <div className="flex flex-wrap -mx-4">
@@ -53,4 +53,4 @@ const ServiceSection = () => {
   );
 };
 
-export default ServiceSection;
+export default ServiceGoalSection;
