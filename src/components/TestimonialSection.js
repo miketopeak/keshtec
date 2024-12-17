@@ -45,10 +45,10 @@ const TestimonialSection = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center bg-black text-white text-center py-10 px-5 mt-[95px]">
-      <div className="relative mb-5">
-        <div className="text-6xl font-bold text-white">“</div>
-        <p className="text-lg mt-2 mx-5 max-w-4xl">
+    <div className="flex flex-col justify-center items-center bg-black text-white text-center py-10 px-5 mt-[95px] h-[300px]">
+      <div className="relative mb-5 h-[150px] flex items-center justify-center">
+        <div className="absolute top-0 text-6xl font-bold text-white">“</div>
+        <p className="text-lg mt-2 mx-5 max-w-4xl overflow-hidden line-clamp-2">
           {testimonials[currentIndex].text}
         </p>
       </div>
