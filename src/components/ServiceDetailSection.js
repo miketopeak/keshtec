@@ -26,7 +26,7 @@ const services = [
 
 const ServiceDetailSection = () => {
   return (
-    <section className="auto-container py-[100px] px-8 bg-white">
+    <section className="auto-container py-[100px] bg-white">
       {/* Section Header */}
       <div className="text-center mb-12">
         <p className="text-sm uppercase tracking-widest text-gray-500 mb-[20px]">
