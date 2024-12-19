@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection";
 import TestimonialSection from "./components/TestimonialSection";
 import ServiceDetailSection from "./components/ServiceDetailSection";
 import VendorSection from "./components/VendorSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <TestimonialSection />
       <ServiceDetailSection />
       <VendorSection />
+      <Footer />
     </div>
   );
 }
