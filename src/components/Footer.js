@@ -1,4 +1,5 @@
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaHouseChimney } from "react-icons/fa6";
 import logowithtagline from "../images/logowithtagline.png";
 
 const Footer = () => {
@@ -82,10 +83,10 @@ const Footer = () => {
         <div>
           <h3 className="font-bold text-lg mb-3">CONTACT INFO</h3>
           <ul className="space-y-2">
-            <li className="flex items-center gap-2">📞 956-366-9666</li>
-            <li className="flex items-center gap-2">📧 hr@keshtec.com</li>
-            <li className="flex items-center gap-2">
-              🏠 Kesh Tec Inc, 1575 Redbud Blvd, Suite #100, McKinney, TX 75069
+            <li className="flex items-center gap-2"><FaPhoneAlt className="text-[#45a401]" /> 956-366-9666</li>
+            <li className="flex items-center gap-2"><FaEnvelope className="text-[#45a401]" /> hr@keshtec.com</li>
+            <li className="flex gap-2"><FaHouseChimney size={24} className="text-[#45a401]" />
+               Kesh Tec Inc, 1575 Redbud Blvd, Suite #100, McKinney, TX 75069
             </li>
           </ul>
         </div>
