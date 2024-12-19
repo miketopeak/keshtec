@@ -3,19 +3,15 @@ import logowithtagline from "../images/logowithtagline.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0A1D54] text-white py-10">
+    <footer className="bg-[#0A1D54] text-white pt-10">
       <div className="container mx-auto px-5 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <img
             src={logowithtagline}
             alt="Kesh Tec Inc"
-            className="w-[280px] h-[280px] object-contain mb-4"
+            className="w-[280px] h-[280px] object-contain mb-1"
           />
-          <p className="text-lg font-semibold">KESH TEC INC</p>
-          <p className="text-sm italic mb-4">
-            WHERE TALENT AND OPPORTUNITY MEETS
-          </p>
           <p className="text-sm leading-relaxed">
             Kesh Technologies enables you to achieve your business goals by
             scaling up operations, reducing risk, and getting a consistent level
@@ -95,21 +91,21 @@ const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom */}
-      <div className="mt-10 border-t border-white/20 pt-5 text-center">
-        <p className="text-sm">
+      <div className="bg-[#020f2f] mt-10 border-t border-white/20 py-5 text-center">
+        <p className="text-sm text-[#afd3f3]">
           Copyright ©2022 Kesh Tec Inc. All rights reserved.
         </p>
         <div className="flex justify-center mt-3 space-x-4">
-          <a href="#" className="text-white hover:text-gray-300">
+          <a href="#" className="text-[#3B5998] hover:text-gray-300">
             <FaFacebook size={24} />
           </a>
-          <a href="#" className="text-white hover:text-gray-300">
+          <a href="#" className="text-[#55ACEE] hover:text-gray-300">
             <FaTwitter size={24} />
           </a>
-          <a href="#" className="text-white hover:text-gray-300">
+          <a href="#" className="text-[#007bb5] hover:text-gray-300">
             <FaLinkedin size={24} />
           </a>
-          <a href="#" className="text-white hover:text-gray-300">
+          <a href="#" className="text-[#ee2a7b] hover:text-gray-300">
             <FaInstagram size={24} />
           </a>
         </div>
