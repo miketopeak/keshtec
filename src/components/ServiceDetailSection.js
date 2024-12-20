@@ -52,11 +52,10 @@ const ServiceDetailSection = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="relative rounded-lg h-80 bg-cover bg-center group"
+            className="relative h-80 bg-cover bg-center group"
             style={{ backgroundImage: `url(${service.image})` }}
           >
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 rounded-lg group-hover:opacity-60 transition-all bg-gradient-to-b from-transparent to-[rgba(69,164,1,0.54)]"></div>
+            <div className="absolute inset-0 group-hover:opacity-60 transition-all bg-gradient-to-b from-transparent to-[rgba(69,164,1,0.54)]"></div>
 
             {/* Card Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
