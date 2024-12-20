@@ -1,26 +1,29 @@
 import React from "react";
-import ser1 from "../images/ser1.jpg"
-import ser2 from "../images/ser2.jpg"
-import ser3 from "../images/ser3.jpg"
+import { TbTargetArrow } from "react-icons/tb";
+import { AiOutlineBarChart } from "react-icons/ai";
+import { GiMagnifyingGlass } from "react-icons/gi";
+import ser1 from "../images/ser1.jpg";
+import ser2 from "../images/ser2.jpg";
+import ser3 from "../images/ser3.jpg";
 
 const services = [
   {
     id: 1,
     title: "Custom Software Solutions",
     image: ser1,
-    icon: "🎯", // Replace with an actual icon or SVG
+    icon: TbTargetArrow,
   },
   {
     id: 2,
     title: "IT Staffing & Services",
     image: ser2,
-    icon: "🤝", // Replace with an actual icon or SVG
+    icon: AiOutlineBarChart,
   },
   {
     id: 3,
     title: "Managed IT Services",
     image: ser3,
-    icon: "🛠", // Replace with an actual icon or SVG
+    icon: GiMagnifyingGlass,
   },
 ];
 
@@ -57,7 +60,9 @@ const ServiceDetailSection = () => {
 
             {/* Card Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
-              <div className="text-5xl mb-4">{service.icon}</div>
+              <div className="text-5xl mb-4">
+                {React.createElement(service.icon)}
+              </div>
               <h3 className="text-xl font-semibold">{service.title}</h3>
             </div>
           </div>
