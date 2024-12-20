@@ -56,7 +56,7 @@ const ServiceDetailSection = () => {
             style={{ backgroundImage: `url(${service.image})` }}
           >
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg group-hover:bg-opacity-60 transition-all"></div>
+            <div className="absolute inset-0 rounded-lg group-hover:opacity-60 transition-all bg-gradient-to-b from-transparent to-[rgba(69,164,1,0.54)]"></div>
 
             {/* Card Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
