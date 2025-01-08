@@ -7,12 +7,12 @@ const Navbar = () => {
   const dropdownRef = useRef(null);
 
   const navLinks = [
-    { name: "Home", href: "#home", key: "home" },
-    { name: "Services", href: "#services", key: "services", isDropdown: true },
-    { name: "About Us", href: "#about-us", key: "about-us" },
-    { name: "Jobs", href: "#jobs", key: "jobs" },
-    { name: "Careers", href: "#careers", key: "careers" },
-    { name: "Contact Us", href: "#contact-us", key: "contact-us" },
+    { name: "Home", href: "/", key: "home" },
+    { name: "Services", href: "/services", key: "services", isDropdown: true },
+    { name: "About Us", href: "/about-us", key: "about-us" },
+    { name: "Jobs", href: "/jobs", key: "jobs" },
+    { name: "Careers", href: "/careers", key: "careers" },
+    { name: "Contact Us", href: "/contact-us", key: "contact-us" },
   ];
 
   const dropdownLinks = [

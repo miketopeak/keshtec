@@ -1,25 +1,30 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import ServiceGoalSection from "./components/ServiceGoalSection";
-import AboutSection from "./components/AboutSection";
-import TestimonialSection from "./components/TestimonialSection";
-import ServiceDetailSection from "./components/ServiceDetailSection";
-import VendorSection from "./components/VendorSection";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Jobs from "./pages/Jobs";
+// import Services from "./pages/Services";
+// import About from "./pages/About";
+// import Careers from "./pages/Careers";
+// import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <HeroSection />
-      <ServiceGoalSection />
-      <AboutSection />
-      <TestimonialSection />
-      <ServiceDetailSection />
-      <VendorSection />
-      <Footer />
-    </div>
+    <Router>
+      <>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/jobs" element={<Jobs />} />
+          {/* <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<Contact />} /> */}
+        </Routes>
+        <Footer />
+      </>
+    </Router>
   );
 }
 
