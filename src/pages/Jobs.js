@@ -38,7 +38,7 @@ function Jobs() {
         </div>
       </section>
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-[100px] items-center">
           {/* Left Section */}
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">
