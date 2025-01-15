@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import jobposting from "../images/jobposting.jpg";
 
 function Jobs() {
@@ -31,7 +32,9 @@ function Jobs() {
 
           {/* Breadcrumb */}
           <nav className="text-sm">
-            <span className="text-gray-300">Home</span>
+            <Link to="/" className="text-gray-300 hover:text-white hover:underline">
+              <span>Home</span>
+            </Link>
             <span className="mx-2 text-gray-300">›</span>
             <span className="text-white">Job Posting</span>
           </nav>
@@ -42,7 +45,8 @@ function Jobs() {
           {/* Left Section */}
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">
-              Do you have <span className="text-[#45a401] italic">questions?</span>
+              Do you have{" "}
+              <span className="text-[#45a401] italic">questions?</span>
             </h2>
             <p className="text-gray-600 leading-relaxed">
               Nor is there anyone who loves or pursues or desires to obtain pain
