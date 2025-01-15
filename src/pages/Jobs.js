@@ -32,7 +32,7 @@ function Jobs() {
 
           {/* Breadcrumb */}
           <nav className="text-sm">
-            <Link to="/" className="text-gray-300 hover:text-white hover:underline">
+            <Link to="/" className="text-white hover:underline">
               <span>Home</span>
             </Link>
             <span className="mx-2 text-gray-300">›</span>
