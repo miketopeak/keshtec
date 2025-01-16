@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import jobposting from "../images/jobposting.jpg";
+import jobcontact from "../images/jobcontact.jpg";
 
 function Jobs() {
   // State to track the active tab
@@ -40,10 +41,10 @@ function Jobs() {
           </nav>
         </div>
       </section>
-      <section className="bg-white py-12">
+      <section className="bg-white py-12 my-[100px]">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-[100px] items-center">
           {/* Left Section */}
-          <div className="space-y-4">
+          <div className="space-y-9">
             <h2 className="text-3xl font-bold">
               Do you have{" "}
               <span className="text-[#45a401] italic">questions?</span>
@@ -100,6 +101,57 @@ function Jobs() {
             {/* Tab Content */}
             <div className="border-t pt-4">
               <p className="text-gray-600">{tabContents[activeTab]}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="relative bg-cover bg-center bg-no-repeat py-16"
+        style={{ backgroundImage: `url(${jobcontact})` }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-white">
+          <h2 className="text-4xl font-bold mb-4">
+            If you need help! <span className="text-green-400">contact us</span>
+          </h2>
+          <p className="text-lg mb-8">
+            Objectively innovate your empowered manufactured products whereas
+            parallel platforms for your ideas.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left text-gray-200">
+            {/* Address */}
+            <div className="flex items-center">
+              <div className="text-green-400 text-2xl mr-4">
+                <i className="fas fa-map-marker-alt"></i>{" "}
+                {/* Replace with your icon */}
+              </div>
+              <div>
+                <p className="font-semibold">Kesh Tec Inc</p>
+                <p>1575 Redbud Blvd, Suite # 100,</p>
+                <p>McKinney, TX 75069</p>
+              </div>
+            </div>
+            {/* Phone */}
+            <div className="flex items-center">
+              <div className="text-green-400 text-2xl mr-4">
+                <i className="fas fa-phone"></i> {/* Replace with your icon */}
+              </div>
+              <div>
+                <p className="font-semibold">956-366-9666</p>
+              </div>
+            </div>
+            {/* Email */}
+            <div className="flex items-center">
+              <div className="text-green-400 text-2xl mr-4">
+                <i className="fas fa-envelope"></i>{" "}
+                {/* Replace with your icon */}
+              </div>
+              <div>
+                <p className="font-semibold">hr@keshtech.com</p>
+              </div>
             </div>
           </div>
         </div>
