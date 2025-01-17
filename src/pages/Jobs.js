@@ -115,9 +115,9 @@ function Jobs() {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-white">
           <h2 className="text-4xl font-bold mb-4">
-            If you need help! <span className="text-green-400">contact us</span>
+            If you need help ! <span className="text-[#45a401] italic">contact us</span>
           </h2>
-          <p className="text-lg mb-8">
+          <p className="text-lg text-[#45a401] mb-8">
             Objectively innovate your empowered manufactured products whereas
             parallel platforms for your ideas.
           </p>
@@ -135,7 +135,7 @@ function Jobs() {
               </div>
             </div>
             {/* Phone */}
-            <div className="flex items-center">
+            <div>
               <div className="text-green-400 text-2xl mr-4">
                 <i className="fas fa-phone"></i> {/* Replace with your icon */}
               </div>
@@ -144,7 +144,7 @@ function Jobs() {
               </div>
             </div>
             {/* Email */}
-            <div className="flex items-center">
+            <div>
               <div className="text-green-400 text-2xl mr-4">
                 <i className="fas fa-envelope"></i>{" "}
                 {/* Replace with your icon */}
