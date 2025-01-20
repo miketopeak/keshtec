@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaMapLocation } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { BsEnvelope } from "react-icons/bs";
 import jobposting from "../images/jobposting.jpg";
 import jobcontact from "../images/jobcontact.jpg";
 
@@ -115,7 +118,8 @@ function Jobs() {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-white">
           <h2 className="text-4xl font-bold mb-4">
-            If you need help ! <span className="text-[#45a401] italic">contact us</span>
+            If you need help !{" "}
+            <span className="text-[#45a401] italic">contact us</span>
           </h2>
           <p className="text-lg text-[#45a401] mb-8">
             Objectively innovate your empowered manufactured products whereas
@@ -123,34 +127,27 @@ function Jobs() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left text-gray-200">
             {/* Address */}
-            <div className="flex items-center">
-              <div className="text-green-400 text-2xl mr-4">
-                <i className="fas fa-map-marker-alt"></i>{" "}
-                {/* Replace with your icon */}
-              </div>
+            <div className="flex items-start gap-2">
+              <FaMapLocation className="mt-1 text-[#45a401]" />
               <div>
-                <p className="font-semibold">Kesh Tec Inc</p>
+                <p>Kesh Tec Inc</p>
                 <p>1575 Redbud Blvd, Suite # 100,</p>
                 <p>McKinney, TX 75069</p>
               </div>
             </div>
+
             {/* Phone */}
-            <div>
-              <div className="text-green-400 text-2xl mr-4">
-                <i className="fas fa-phone"></i> {/* Replace with your icon */}
-              </div>
+            <div className="flex items-start gap-2">
+              <FaPhoneAlt className="text-[#45a401] mt-1" />
               <div>
-                <p className="font-semibold">956-366-9666</p>
+                <p>956-366-9666</p>
               </div>
             </div>
             {/* Email */}
-            <div>
-              <div className="text-green-400 text-2xl mr-4">
-                <i className="fas fa-envelope"></i>{" "}
-                {/* Replace with your icon */}
-              </div>
+            <div className="flex items-start gap-2">
+              <BsEnvelope className="text-[#45a401] mt-1" />
               <div>
-                <p className="font-semibold">hr@keshtech.com</p>
+                <p>hr@keshtec.com</p>
               </div>
             </div>
           </div>
