@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Jobs from "./pages/Jobs";
 // import Services from "./pages/Services";
-// import About from "./pages/About";
+import About from "./pages/About";
 // import Careers from "./pages/Careers";
 // import Contact from "./pages/Contact";
 
@@ -17,8 +17,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/jobs" element={<Jobs />} />
-          {/* <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
+          {/* <Route path="/services" element={<Services />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} /> */}
         </Routes>
